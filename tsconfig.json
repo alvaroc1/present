@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "strict": false,
+    "module": "CommonJS",
+    "jsx": "react",
+    "esModuleInterop": true,
+
+    // false if source maps are disabled
+    "sourceMap": true,
+    "noEmit": false,
+    "lib": [ "es6", "dom", "es2017.object", "es2019.object" ]
+  }
+}

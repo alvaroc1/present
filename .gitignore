@@ -1,0 +1,4 @@
+.cache
+.metals
+dist/
+node_modules/
