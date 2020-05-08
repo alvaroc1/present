@@ -100,6 +100,8 @@ export default withStyles(styles)((props: DeckProps) => {
     switch (ev.key) {
       case "ArrowRight":  next(); break;
       case "ArrowLeft":   prev(); break;
+      case "ArrowUp": setCurrentPos(findSlidePos(currentSlideIdx - 1)); break;
+      case "ArrowDown": setCurrentPos(findSlidePos(currentSlideIdx + 1)); break;
       case "f":           requestFullcreen(); break;
     }
   }

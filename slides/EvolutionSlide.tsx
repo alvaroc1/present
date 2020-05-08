@@ -1,20 +1,24 @@
 import * as React from 'react'
 import SlideData from '../components/SlideData'
-import Stepper from '../components/Stepper'
 import Base from '../parts/Base'
+import func from '../images/func.png'
+import error from '../images/error.png'
+import state from '../images/state.png'
+import effect from '../images/effect.png'
+import Stepper from '../components/Stepper'
+import Center from '../layout/Center'
 
 export default SlideData.create({
   elements: {
-    func: Stepper.show(<h1 style={{fontSize: 80, lineHeight: 2.2}}>Input → Output</h1>),
-    mfunc: Stepper.show(<h2 style={{fontSize: 50}}>f(x) = x<sup>2</sup></h2>)
+    image: Stepper.states([func, error, state, effect], (img) => {
+      return <img src={img} style={{width: 1832 * .4, height: 943 * .4}}/>
+    })
   },
   render: elements => 
-    <Base title='Function'>
-      <div style={{textAlign: 'center'}}>
-        {elements.func}
-
-        {elements.mfunc}
-      </div>
+    <Base>
+      <Center>
+        {elements.image}
+      </Center>
     </Base>,
   notes: `
     So what is a function? Not talking about programming here, but a math function.

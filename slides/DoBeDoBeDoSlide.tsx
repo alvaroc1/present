@@ -4,6 +4,7 @@ import { createStyles, withStyles, WithStyles } from '@material-ui/styles'
 import 'typeface-roboto'
 import 'typeface-montserrat'
 import Center from '../layout/Center'
+import Base from '../parts/Base'
 
 const styles = createStyles({
   root: {
@@ -47,13 +48,15 @@ const Quote = withStyles(styles)((props: QuoteProps) =>
 export default SlideData.create({
   elements: {},
   render: () => 
-    <Center>
-      <div style={{width: '800'}}>
-        <div style={{marginBottom: 10}}><Quote author='Socrates'>To be is to do</Quote></div>
-        <div style={{marginBottom: 10}}><Quote author='Jean-Paul Sartre'>To do is to be</Quote></div>
-        <Quote author='Frank Sinatra'>Do be do be do</Quote>
-      </div>
-    </Center>,
+    <Base>
+      <Center>
+        <div style={{width: '800'}}>
+          <div style={{marginBottom: 10}}><Quote author='Socrates'>To be is to do</Quote></div>
+          <div style={{marginBottom: 10}}><Quote author='Jean-Paul Sartre'>To do is to be</Quote></div>
+          <Quote author='Frank Sinatra'>Do be do be do</Quote>
+        </div>
+      </Center>
+    </Base>,
   notes: `
     We must recognize the distinction between *Being* and *Doing*.
   `

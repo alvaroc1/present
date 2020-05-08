@@ -23,6 +23,7 @@ import DeclarativeVsImperativeSlide from './slides/DeclarativeVsImperative'
 import IslandsSlide from './slides/IslandsSlide'
 import DoBeDoBeDoSlide from './slides/DoBeDoBeDoSlide'
 import PureOnTheInsideSlide from './slides/PureOnTheInsideSlide'
+import EvolutionSlide from './slides/EvolutionSlide'
 
 const Presentation = () => 
   <Deck
@@ -32,6 +33,7 @@ const Presentation = () =>
       WhatIsItSlide,
       MathSlide,
       WhyMathSlide,
+      EvolutionSlide,
       FunctionSlide,
       FunctionPropsSlide,
       TotalitySlide,
