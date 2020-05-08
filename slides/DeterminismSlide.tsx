@@ -1,13 +1,14 @@
 import * as React from 'react'
-import Slide from '../components/Slide'
-import Background from '../parts/Background'
+import SlideData from '../components/SlideData'
 import Base from '../parts/Base'
 import Stepper from '../components/Stepper'
 import Snippet from '../components/Snippet'
 import { readFileSync } from 'fs'
 
-export default Slide.create({
-  background: <Background/>,
+const badCode = readFileSync(__dirname + '/../snippets/determinism-bad.sc', 'utf8')
+const goodCode = readFileSync(__dirname + '/../snippets/determinism-good.sc', 'utf8')
+
+export default SlideData.create({
   elements: {
     values: Stepper.array([
       'No Randomness',
@@ -19,11 +20,11 @@ export default Slide.create({
         value === 'bad' ?
           <Snippet 
             fontSize={24}
-            code={readFileSync(__dirname + '/../snippets/determinism-bad.sc', 'utf8')} 
+            code={badCode} 
             language='scala'/> :
           <Snippet 
             fontSize={24}
-            code={readFileSync(__dirname + '/../snippets/determinism-good.sc', 'utf8')} 
+            code={goodCode} 
             language='scala'/> 
       )
     )

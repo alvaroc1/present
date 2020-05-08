@@ -1,7 +1,6 @@
 import * as React from 'react'
-import Slide from "../components/Slide"
+import SlideData from "../components/SlideData"
 import Stepper from "../components/Stepper"
-import Background from '../parts/Background'
 import Center from '../layout/Center'
 import TextStrike from '../ui/TextStrike'
 import Base from '../parts/Base'
@@ -14,22 +13,22 @@ const possibilities = [
   'Beautiful Code?'
 ]
 
-export default Slide.create({
-  background: <Background/>,
+export default SlideData.create({
   elements: {
     possible: Stepper.arrayStates(possibilities, [false, true], (v, crossed, active) => 
       active && <div><TextStrike strike={crossed} text={v}/></div>
     )
   },
-  render: elements => <Base title='What is it?'>
-    <div style={{height: 350}}>
-      <Center>
-        <div style={{fontSize: 35, lineHeight: 1.9}}>
-          {elements.possible}
-        </div>
-      </Center>
-    </div>
-  </Base>,
+  render: elements => 
+    <Base title='What is it?'>
+      <div style={{height: 350}}>
+        <Center>
+          <div style={{fontSize: 35, lineHeight: 1.9}}>
+            {elements.possible}
+          </div>
+        </Center>
+      </div>
+    </Base>,
   notes: `
     My goal is to give functional programming a very precise definition.
 

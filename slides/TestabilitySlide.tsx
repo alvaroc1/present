@@ -1,11 +1,9 @@
 import * as React from 'react'
-import Slide from '../components/Slide'
+import SlideData from '../components/SlideData'
 import Base from '../parts/Base'
-import Background from '../parts/Background'
 import Stepper from '../components/Stepper'
 
-export default Slide.create({
-  background: <Background/>,
+export default SlideData.create({
   elements: {
     done: Stepper.array(
       [true], (_, active, past) => 
@@ -26,7 +24,7 @@ export default Slide.create({
         <p style={{fontSize: 30}}>
           Check that the output matches what's expected given a particular input. 
         </p>
-        
+
         {elements.done}
 
         <div style={{fontSize: 34, lineHeight: 1.8, marginTop: 50}}>

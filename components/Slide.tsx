@@ -1,6 +1,5 @@
 import * as React from 'react'
-import { createStyles, WithStyles, withStyles } from '@material-ui/styles'
-import Steppers, { RenderedSteppers, steppersSize, renderSteppers } from './Steppers'
+import { WithStyles, withStyles, createStyles } from "@material-ui/styles";
 
 const styles = createStyles({
   root: {
@@ -27,55 +26,13 @@ const styles = createStyles({
   }
 })
 
-interface SlideCompProps extends WithStyles<typeof styles> {
+interface Props extends WithStyles<typeof styles> {
   background: React.ReactNode,
   children: React.ReactNode
 }
-const SlideComp = withStyles(styles)((props: SlideCompProps) => 
+export default withStyles(styles)((props: Props) => 
   <div className={props.classes.root}>
     <div className={props.classes.background}>{props.background}</div>
     <div className={props.classes.foreground}>{props.children}</div>
   </div>
 )
-
-class Slide {
-
-  constructor (
-    readonly size: number,
-    private readonly renderBody: (currentElementIdx: number) => React.ReactNode,
-    private readonly background: React.ReactNode,
-    readonly notes?: string
-  ) {}
-
-  render = (current: number) => 
-    <SlideComp background={this.background}>
-      {this.renderBody(current)}
-    </SlideComp>
-
-  static create = <E extends Steppers>(params: {
-    background?: React.ReactNode,
-    elements: E,
-    render: (elems: RenderedSteppers<E>) => React.ReactNode,
-    notes?: string
-  }): Slide => {
-    const { elements, background, notes } = params
-
-    const totalSize = 1 + steppersSize(elements)
-    return new Slide (
-      totalSize,
-      (current: number) => {
-        const renderedElems = renderSteppers(elements, current - 1)
-
-        return (
-          <SlideComp background={params.background}>
-            {params.render(renderedElems)}
-          </SlideComp>
-        )
-      },
-      background,
-      notes
-    )
-  }
-}
-
-export default Slide
