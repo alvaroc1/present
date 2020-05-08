@@ -1,4 +1,5 @@
 .cache
 .metals
+.parcel-cache
 dist/
 node_modules/
