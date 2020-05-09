@@ -24,6 +24,7 @@ import IslandsSlide from './slides/IslandsSlide'
 import DoBeDoBeDoSlide from './slides/DoBeDoBeDoSlide'
 import PureOnTheInsideSlide from './slides/PureOnTheInsideSlide'
 import EvolutionSlide from './slides/EvolutionSlide'
+import Composition2Slide from './slides/Composition2Slide'
 
 const Presentation = () => 
   <Deck
@@ -34,6 +35,7 @@ const Presentation = () =>
       MathSlide,
       WhyMathSlide,
       EvolutionSlide,
+      Composition2Slide,
       FunctionSlide,
       FunctionPropsSlide,
       TotalitySlide,
