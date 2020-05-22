@@ -1,0 +1,2 @@
+!function(){function e(){if(!e._executed){var c;c=function(e){return{subLanguage:"xml",contains:[{className:"meta",begin:"^__(END|DATA)__$"},{begin:"^\\s*%{1,2}={0,2}",end:"$",subLanguage:"perl"},{begin:"<%{1,2}={0,2}",end:"={0,1}%>",subLanguage:"perl",excludeBegin:!0,excludeEnd:!0}]}},parcelRequire.register("c3a5acfd5ddc9cac8ac12c7e323f851c",(function(){return c})),e._executed=!0}}parcelRequire.registerBundle("c3a5acfd5ddc9cac8ac12c7e323f851c",e);for(var c=[],n=0;n<c.length;n++)parcelRequire.registerBundle(c[n],e)}();
+//# sourceMappingURL=mojolicious.96f90d61.js.map

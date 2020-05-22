@@ -1,0 +1,2 @@
+!function(){function e(){if(!e._executed){var r;r=function(e){return{contains:[{className:"meta",begin:/^([\w.-]+|\s*#_)?=>/,starts:{end:/$/,subLanguage:"clojure"}}]}},parcelRequire.register("8603c0db9f67af91a4107596b349511a",(function(){return r})),e._executed=!0}}parcelRequire.registerBundle("8603c0db9f67af91a4107596b349511a",e);for(var r=[],a=0;a<r.length;a++)parcelRequire.registerBundle(r[a],e)}();
+//# sourceMappingURL=clojure-repl.1c13cd2e.js.map
