@@ -1,2 +1,0 @@
-!function(){function e(){if(!e._executed){var r;r=function(e){return{subLanguage:"xml",contains:[{begin:"<%",end:"%>",subLanguage:"vbscript"}]}},parcelRequire.register("43244e48642404869c8ebd1f52a37c0e",(function(){return r})),e._executed=!0}}parcelRequire.registerBundle("43244e48642404869c8ebd1f52a37c0e",e);for(var r=[],n=0;n<r.length;n++)parcelRequire.registerBundle(r[n],e)}();
-//# sourceMappingURL=vbscript-html.634b9a34.js.map

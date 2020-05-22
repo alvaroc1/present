@@ -1,2 +1,0 @@
-!function(){function e(){if(!e._executed){var a;a=function(e){return{contains:[{className:"meta",begin:/^julia>/,relevance:10,starts:{end:/^(?![ ]{6})/,subLanguage:"julia"},aliases:["jldoctest"]}]}},parcelRequire.register("e4a8b429081a2c2ec4339f3f9d2de553",(function(){return a})),e._executed=!0}}parcelRequire.registerBundle("e4a8b429081a2c2ec4339f3f9d2de553",e);for(var a=[],r=0;r<a.length;r++)parcelRequire.registerBundle(a[r],e)}();
-//# sourceMappingURL=julia-repl.d1518d3f.js.map
