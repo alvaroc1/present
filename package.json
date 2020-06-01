@@ -1,15 +1,17 @@
 {
-  "name": "presentation2",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@alvaroc1/present",
+  "version": "0.0.1-b",
+  "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build ./index.ts --global @alvaroc1/present"
   },
+  "types": "index.d.ts",
   "devDependencies": {
-    "typescript": "^3.8.3",
-    "parcel-bundler": "^1.12.4"
+    "npm": "^6.14.5",
+    "parcel-bundler": "^1.12.4",
+    "typescript": "^3.8.3"
   },
   "dependencies": {
     "@material-ui/styles": "^4.9.10",
