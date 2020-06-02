@@ -1,9 +1,10 @@
 {
   "name": "@alvaroc1/present",
-  "version": "0.0.1-g",
+  "version": "0.0.1-h",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
+    "prepublish": "tsc --declaration --outDir . --emitDeclarationOnly",
     "build": "rm -rf ./lib && tsc"
   },
   "types": "dist/index.d.ts",
