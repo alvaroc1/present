@@ -1,10 +1,10 @@
 {
   "name": "@alvaroc1/present",
-  "version": "0.0.1-k",
+  "version": "0.0.1-l",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
-    "prepublish": "tsc --declaration --outDir . --emitDeclarationOnly",
+    "prepublishx": "tsc --declaration --outDir . --emitDeclarationOnly",
     "build": "rm -rf ./lib && tsc"
   },
   "types": "dist/index.d.ts",
@@ -14,10 +14,7 @@
   },
   "files": [
     "dist",
-    "src",
-    "components.d.ts",
-    "ui.d.ts",
-    "layout.d.ts"
+    "src"
   ],
   "dependencies": {
     "@material-ui/styles": "^4.9.10",
