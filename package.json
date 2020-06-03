@@ -1,6 +1,6 @@
 {
   "name": "@alvaroc1/present",
-  "version": "0.0.1-h",
+  "version": "0.0.1-i",
   "main": "dist/index.js",
   "license": "MIT",
   "scripts": {
@@ -14,7 +14,10 @@
   },
   "files": [
     "dist",
-    "src"
+    "src",
+    "components.d.ts",
+    "ui.d.ts",
+    "layout.d.ts"
   ],
   "dependencies": {
     "@material-ui/styles": "^4.9.10",
