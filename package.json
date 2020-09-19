@@ -32,8 +32,7 @@
     "react-syntax-highlighter": "9.0.1",
     "typeface-clear-sans": "^0.0.44",
     "typeface-montserrat": "^0.0.75",
-    "typeface-roboto": "^0.0.75",
-    "ui": "^0.2.4"
+    "typeface-roboto": "^0.0.75"
   },
   "browserslist": {
     "production": [
