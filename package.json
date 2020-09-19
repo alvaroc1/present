@@ -1,22 +1,22 @@
 {
   "name": "@alvaroc1/present",
-  "version": "0.0.1-m",
-  "main": "dist/index.js",
+  "version": "0.0.2",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "prepublishx": "tsc --declaration --outDir . --emitDeclarationOnly",
-    "build": "rm -rf ./lib && tsc"
+    "start": "react-scripts start",
+    "prebuild": "rm -Rf dist && mkdir dist && cp package.json dist/",
+    "build": "tsc --declaration --noEmit false"
   },
   "types": "dist/index.d.ts",
   "devDependencies": {
+    "create-react-app": "^3.4.1",
     "npm": "^6.14.5",
-    "typescript": "^3.8.3"
+    "react-scripts": "^3.4.3",
+    "typescript": "4.0.3"
   },
-  "files": [
-    "dist",
-    "src"
-  ],
   "dependencies": {
+    "@alvaroc1/layout": "^1.0.0-q",
     "@material-ui/styles": "^4.9.10",
     "@types/common-tags": "^1.8.0",
     "@types/node": "^13.13.2",
@@ -34,5 +34,17 @@
     "typeface-montserrat": "^0.0.75",
     "typeface-roboto": "^0.0.75",
     "ui": "^0.2.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }

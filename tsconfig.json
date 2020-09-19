@@ -1,13 +1,35 @@
 {
   "compilerOptions": {
     "strict": false,
-    "module": "CommonJS",
+    "module": "esnext",
     "jsx": "react",
     "esModuleInterop": true,
-
-    // false if source maps are disabled
+    "target": "ES6",
+    "outDir": "dist",
+    "skipLibCheck": true,
+    "typeRoots": [
+      "index.d.ts",
+      "node_modules/@types"
+    ],
     "sourceMap": true,
-    "noEmit": false,
-    "lib": [ "es6", "dom", "es2017.object", "es2019.object" ]
-  }
+    "lib": [
+      "dom",
+      "es2017.object",
+      "es2019.object"
+    ],
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
+  },
+  "include": [
+    "./src/**/*.tsx",
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
