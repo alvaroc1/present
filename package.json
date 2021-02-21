@@ -10,10 +10,9 @@
   },
   "types": "dist/index.d.ts",
   "devDependencies": {
-    "create-react-app": "^3.4.1",
-    "npm": "^6.14.5",
-    "react-scripts": "^3.4.3",
-    "typescript": "4.0.3"
+    "create-react-app": "4.0.2",
+    "react-scripts": "4.0.2",
+    "typescript": "4.1.5"
   },
   "dependencies": {
     "@alvaroc1/layout": "^1.0.0-q",
@@ -44,6 +43,12 @@
       "last 1 chrome version",
       "last 1 firefox version",
       "last 1 safari version"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
     ]
   }
 }
