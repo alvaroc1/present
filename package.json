@@ -1,10 +1,21 @@
 {
   "name": "@alvaroc1/present",
-  "version": "0.0.8",
+  "version": "0.0.10",
   "license": "MIT",
   "scripts": {
     "start": "ts-node -T fuse"
   },
+  "exports": {
+    ".": "./src/index.ts",
+    "./components/*": "./src/components/*"
+  },
+  "typesVersions": {
+    "*": {
+      "components/*": ["src/components/*"],
+      "ui/*": ["src/ui/*"]
+    }
+  },
+  "main": "src/index.ts",
   "ts:main": "src/index.ts",
   "typings": "src/index.ts",
   "devDependencies": {
