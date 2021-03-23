@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Deck from './components/Deck'
-import SlideData from './components/SlideData'
+import Deck from '../src/components/Deck'
+import SlideData from '../src/components/SlideData'
 
 ReactDOM.render(
   <Deck 

@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
+    "target": "ES2020",                                /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    "moduleResolution": "node",
     "strict": false,
-    "module": "esnext",
     "jsx": "react-jsx",
     "esModuleInterop": true,
-    "target": "ES6",
-    "outDir": "dist",
     "skipLibCheck": true,
     "typeRoots": [
       "index.d.ts",
@@ -20,17 +19,9 @@
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
     "forceConsistentCasingInFileNames": true,
-    "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    //"isolatedModules": true,
     "noEmit": true,
     "noFallthroughCasesInSwitch": true
-  },
-  "include": [
-    "./src/**/*.tsx",
-    "./src/**/*.ts"
-  ],
-  "exclude": [
-    "node_modules"
-  ]
+  }
 }

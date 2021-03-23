@@ -1,22 +1,20 @@
 {
   "name": "@alvaroc1/present",
-  "version": "0.0.6",
-  "main": "index.js",
+  "version": "0.0.8",
   "license": "MIT",
   "scripts": {
-    "start": "react-scripts start",
-    "prebuild": "rm -Rf dist && mkdir dist && cp package.json dist/",
-    "build": "tsc --declaration --noEmit false"
+    "start": "ts-node -T fuse"
   },
-  "types": "dist/index.d.ts",
+  "ts:main": "src/index.ts",
+  "typings": "src/index.ts",
   "devDependencies": {
-    "create-react-app": "4.0.3",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "react-scripts": "4.0.3",
-    "typescript": "4.1.5"
+    "typescript": "4.1.5",
+    "fuse-box": "^4.0.1-next.4",
+    "ts-node": "^9.1.1"
   },
   "dependencies": {
-    "@alvaroc1/layout": "^1.0.0-q",
+    "@alvaroc1/layout": "1.0.1",
     "@material-ui/styles": "^4.9.10",
     "@types/common-tags": "^1.8.0",
     "@types/node": "^13.13.2",
