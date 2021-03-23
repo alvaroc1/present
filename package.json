@@ -1,6 +1,6 @@
 {
   "name": "@alvaroc1/present",
-  "version": "0.0.2",
+  "version": "0.0.6",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -10,8 +10,9 @@
   },
   "types": "dist/index.d.ts",
   "devDependencies": {
-    "create-react-app": "4.0.2",
-    "react-scripts": "4.0.2",
+    "create-react-app": "4.0.3",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "react-scripts": "4.0.3",
     "typescript": "4.1.5"
   },
   "dependencies": {
@@ -24,8 +25,8 @@
     "@types/react-syntax-highlighter": "10.1.0",
     "common-tags": "^1.8.0",
     "global": "^4.4.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-markdown": "^4.3.1",
     "react-spring": "^8.0.27",
     "react-syntax-highlighter": "9.0.1",
@@ -48,7 +49,8 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:react-hooks/recommended"
     ]
   }
 }
