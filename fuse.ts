@@ -10,4 +10,5 @@ const fuse = fusebox({
   }
 })
 
-fuse.runDev()
+//fuse.runDev()
+fuse.runProd()

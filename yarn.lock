@@ -2,12 +2,12 @@
 # yarn lockfile v1
 
 
-"@alvaroc1/layout@1.0.1":
-  version "1.0.1"
-  resolved "https://registry.npmjs.org/@alvaroc1/layout/-/layout-1.0.1.tgz#a7d79546cdd2e1f13b13106238620feef0cd5a78"
-  integrity sha512-MAfyNI/Ea1xIGRbcntAL35bUq+rsY4gcgyvMsI4YEwudybWBhJjA4czSmWISn9RJetwT/B3YPvNp5huQ4VwkOw==
+"@alvaroc1/layout@1.0.3":
+  version "1.0.3"
+  resolved "https://registry.npmjs.org/@alvaroc1/layout/-/layout-1.0.3.tgz#6cb54af499429210c74a6e602025ab803482c38a"
+  integrity sha512-EHARKv9qYW4xElHq27gmw/fd0HXEyJ26CHdddiSeSPn+vUYbcAhc9bkyx0IzuGr9NhzOS4XXSH4eE/npcdAoiw==
   dependencies:
-    "@material-ui/styles" "^4.10.0"
+    "@material-ui/styles" "4.11.3"
     "@types/classnames" "^2.2.10"
     "@types/react" "^16.9.35"
     "@types/react-dom" "^16.9.8"
@@ -27,10 +27,10 @@
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/@emotion/hash/-/hash-0.8.0.tgz#bbbff68978fefdbe68ccb533bc8cbe1d1afb5413"
   integrity sha1-u7/2iXj+/b5ozLUzvIy+HRr7VBM=
 
-"@material-ui/styles@^4.10.0", "@material-ui/styles@^4.9.10":
+"@material-ui/styles@4.11.3":
   version "4.11.3"
-  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/@material-ui/styles/-/styles-4.11.3.tgz#1b8d97775a4a643b53478c895e3f2a464e8916f2"
-  integrity sha1-G42Xd1pKZDtTR4yJXj8qRk6JFvI=
+  resolved "https://registry.npmjs.org/@material-ui/styles/-/styles-4.11.3.tgz#1b8d97775a4a643b53478c895e3f2a464e8916f2"
+  integrity sha512-HzVzCG+PpgUGMUYEJ2rTEmQYeonGh41BYfILNFb/1ueqma+p1meSdu4RX6NjxYBMhf7k+jgfHFTTz+L1SXL/Zg==
   dependencies:
     "@babel/runtime" "^7.4.4"
     "@emotion/hash" "^0.8.0"
