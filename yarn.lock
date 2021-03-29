@@ -116,6 +116,11 @@
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/@types/prop-types/-/prop-types-15.7.3.tgz#2ab0d5da2e5815f94b0b9d4b95d1e5f243ab2ca7"
   integrity sha1-KrDV2i5YFflLC51LldHl8kOrLKc=
 
+"@types/qs@^6.9.6":
+  version "6.9.6"
+  resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/@types/qs/-/qs-6.9.6.tgz#df9c3c8b31a247ec315e6996566be3171df4b3b1"
+  integrity sha1-35w8izGiR+wxXmmWVmvjFx30s7E=
+
 "@types/react-dom@^16.9.6", "@types/react-dom@^16.9.8":
   version "16.9.12"
   resolved "https://artifactory.twitter.biz:443/api/npm/js-virtual/@types/react-dom/-/react-dom-16.9.12.tgz#55cd6b17e73922edb9545e5355a0016c1734e6f4"

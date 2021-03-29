@@ -6,6 +6,7 @@ class SlideData {
   constructor (
     readonly size: number,
     private readonly renderBody: (currentElementIdx: number) => React.ReactNode,
+    readonly id?: string,
     readonly notes?: string
   ) {}
 
@@ -14,9 +15,10 @@ class SlideData {
   static create = <E extends Steppers>(params: {
     elements: E,
     render: (elems: RenderedSteppers<E>) => React.ReactNode,
+    id?: string
     notes?: string
   }): SlideData => {
-    const { elements, notes } = params
+    const { elements, id, notes } = params
 
     const totalSize = 1 + steppersSize(elements)
     return new SlideData (
@@ -26,6 +28,7 @@ class SlideData {
 
         return params.render(renderedElems)
       },
+      id,
       notes
     )
   }
